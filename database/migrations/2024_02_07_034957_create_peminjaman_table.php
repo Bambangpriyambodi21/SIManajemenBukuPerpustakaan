@@ -18,6 +18,8 @@ class CreatePeminjamanTable extends Migration
             $table->string('tgl_pinjam');
             $table->string('tgl_kembali');
             $table->string('status');
+            $table->string('email');
+            $table->bigInteger('id_buku');
             $table->softDeletes();
             $table->timestamps();
         });
